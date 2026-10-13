@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creatures Of Paradise | Bonkers Corner UI Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Announcement bar (scrolling) ===== -->
+  <div class="announcement">
+    <div class="marquee">
+      <span>THE BIGGEST COLLAB YET!! BONKERS × HUSTLE IS LIVE NOW! USE CODE HUSTLE10 FOR 10% OFF.</span>
+      <span>💰 Extra 10% OFF | Use code SHARKTANK10 | Min. cart ₹500 🛒 🦈 AS SEEN ON SHARK TANK 🦈</span>
+      <span>THE BIGGEST COLLAB YET!! BONKERS × HUSTLE IS LIVE NOW! USE CODE HUSTLE10 FOR 10% OFF.</span>
+      <span>💰 Extra 10% OFF | Use code SHARKTANK10 | Min. cart ₹500 🛒 🦈 AS SEEN ON SHARK TANK 🦈</span>
+    </div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header-inner">
+      <nav class="nav-left">
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Premium</a>
+        <a href="#">Bestsellers</a>
+        <a href="#">Accessories</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <a href="#" class="logo">BONKERS<span>CORNER</span></a>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+        </div>
+        <a href="#" class="icon" title="Account">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </a>
+        <a href="#" class="icon" title="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9A5 5 0 0 1 12 6a5 5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+        </a>
+        <a href="#" class="icon" title="Store Locator">
+          <svg viewBox="0 0 24 24"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        </a>
+        <a href="#" class="icon cart" title="Cart">
+          <svg viewBox="0 0 24 24"><path d="M5 7h14l-1.5 13h-11z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Breadcrumb ===== -->
+  <div class="container breadcrumb">
+    <a href="#">Home</a> / <a href="#">Shop</a> / <span>Creatures Of Paradise</span>
+  </div>
+
+  <!-- ===== Collection banner ===== -->
+  <section class="container banner">
+    <div class="banner-img">
+      <h1>Creatures Of Paradise</h1>
+      <p>Wear wild. Stay Bonkers.</p>
+    </div>
+  </section>
+
+  <!-- ===== Main: filters + products ===== -->
+  <main class="container main">
+
+    <!-- Sidebar filters -->
+    <aside class="filters">
+      <h4>Filter and sort <small>54 products</small></h4>
+
+      <details open>
+        <summary>Availability</summary>
+        <label><input type="checkbox"> In stock</label>
+      </details>
+
+      <details open>
+        <summary>Price</summary>
+        <p class="hint">The highest price is Rs.999.00</p>
+        <div class="price-range">
+          <span>₹ <input type="number" placeholder="From"></span>
+          <span>₹ <input type="number" placeholder="To"></span>
+        </div>
+      </details>
+
+      <details open>
+        <summary>Size</summary>
+        <label><input type="checkbox"> XS</label>
+        <label><input type="checkbox"> S</label>
+        <label><input type="checkbox"> M</label>
+        <label><input type="checkbox"> L</label>
+        <label><input type="checkbox"> XL</label>
+        <label><input type="checkbox"> XXL</label>
+      </details>
+
+      <details>
+        <summary>Category</summary>
+        <label><input type="checkbox"> T-Shirts</label>
+      </details>
+
+      <details>
+        <summary>Color</summary>
+        <label><input type="checkbox"> <i class="dot" style="background:#111"></i> Black</label>
+        <label><input type="checkbox"> <i class="dot" style="background:#2a5bd7"></i> Blue</label>
+        <label><input type="checkbox"> <i class="dot" style="background:#7a4b2a"></i> Brown</label>
+        <label><input type="checkbox"> <i class="dot" style="background:#7b3fa0"></i> Purple</label>
+        <label><input type="checkbox"> <i class="dot" style="background:#d22"></i> Red</label>
+        <label><input type="checkbox"> <i class="dot" style="background:#fff"></i> White</label>
+      </details>
+
+      <details>
+        <summary>Fit</summary>
+        <label><input type="checkbox"> Oversized Fit</label>
+      </details>
+
+      <div class="filter-actions">
+        <a href="#" class="btn-outline">Clear</a>
+        <a href="#" class="btn-dark">Apply</a>
+      </div>
+    </aside>
+
+    <!-- Products -->
+    <section class="products-area">
+      <div class="toolbar">
+        <span>54 products</span>
+        <label>Sort by
+          <select>
+            <option>Featured</option>
+            <option>Best selling</option>
+            <option>Alphabetically, A-Z</option>
+            <option>Alphabetically, Z-A</option>
+            <option>Price, low to high</option>
+            <option>Price, high to low</option>
+            <option>Date, old to new</option>
+            <option>Date, new to old</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="grid">
+        <!-- Product card template: repeat for each product -->
+        <div class="card">
+          <div class="card-img c1">
+            <span class="badge sold">Sold out</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Warrior Ride Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c2">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Courage Voltage Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c3">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Rodeo Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c4">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Horse Club Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c5">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Unleash Raglan Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c6">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Poison Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c1">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Luxury in Chaos Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c2">
+            <span class="badge sold">Sold out</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Reborn Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c3">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Gallop Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c4">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Broken Crayons Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c5">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Flying Tiger Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c6">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Wild Duo Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c1">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Dragon Script Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c2">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Heritage White Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c3">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Power Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c4">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Be Like Water Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c5">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Horizon Seeker Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c6">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Trouble Shooting Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c1">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Crimson Dragon Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img c2">
+            <span class="badge">Save 23%</span>
+            <button class="wish">♡</button>
+            <div class="tee"></div>
+            <button class="add">Add To Cart</button>
+          </div>
+          <h3>Extinct Era Oversized T-shirt</h3>
+          <p class="price"><s>Rs.1,299.00</s> <b>Rs.999.00</b></p>
+        </div>
+      </div>
+
+      <div class="load-more"><a href="#" class="btn-dark">Load more</a></div>
+    </section>
+  </main>
+
+  <!-- ===== SEO / description content ===== -->
+  <section class="container about">
+    <h2>Creatures of Paradise: Where Wild Meets Bonkers</h2>
+    <p>Bold creature graphics, oversized silhouettes and plenty of attitude — tigers, dragons, wild horses and more, each with its own personality. Pick your favourite and let your outfit do the talking.</p>
+
+    <h2>Born to Stand Out</h2>
+    <p>Pair an oversized graphic tee with baggy denim, cargos or relaxed trousers, add sneakers and you're done. Effortless streetwear with a twist.</p>
+
+    <h2>FAQ's</h2>
+    <details class="faq"><summary>1. What is the Creatures of Paradise collection?</summary><p>A collection of creature-inspired oversized graphic T-shirts with relaxed streetwear silhouettes.</p></details>
+    <details class="faq"><summary>2. What kind of T-shirts are available?</summary><p>Oversized graphic tees such as Warrior Ride, Dragon Script, Horse Club, Gallop and Crimson Dragon.</p></details>
+    <details class="faq"><summary>3. How can I style an oversized T-shirt?</summary><p>Wear it with baggy jeans, cargos, joggers or shorts, plus sneakers and a cap.</p></details>
+    <details class="faq"><summary>4. What sizes are available?</summary><p>XS, S, M, L, XL and XXL.</p></details>
+    <details class="faq"><summary>5. What colours are available?</summary><p>Black, blue, brown, red and white.</p></details>
+
+    <h2>Creatures Of Paradise Price list</h2>
+    <table class="price-table">
+      <tr><th>Product</th><th>Price</th></tr>
+      <tr><td>Warrior Ride Oversized T-shirt</td><td>Rs.999.00</td></tr>
+      <tr><td>Courage Voltage Oversized T-shirt</td><td>Rs.999.00</td></tr>
+      <tr><td>Rodeo Oversized T-shirt</td><td>Rs.999.00</td></tr>
+      <tr><td>Horse Club Oversized T-shirt</td><td>Rs.999.00</td></tr>
+      <tr><td>Unleash Raglan Oversized T-shirt</td><td>Rs.999.00</td></tr>
+      <tr><td>Poison Oversized T-shirt</td><td>Rs.999.00</td></tr>
+      <tr><td>Luxury in Chaos Oversized T-shirt</td><td>Rs.999.00</td></tr>
+      <tr><td>Reborn Oversized T-shirt</td><td>Rs.999.00</td></tr>
+      <tr><td>Gallop Oversized T-shirt</td><td>Rs.999.00</td></tr>
+      <tr><td>Broken Crayons Oversized T-shirt</td><td>Rs.999.00</td></tr>
+    </table>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo light">BONKERS<span>CORNER</span></a>
+        <div class="socials">
+          <a href="#">f</a><a href="#">X</a><a href="#">ig</a><a href="#">yt</a><a href="#">P</a>
+        </div>
+      </div>
+
+      <div>
+        <h5>SHOP</h5>
+        <a href="#">Best Sellers</a><a href="#">Special Prices</a><a href="#">New Arrivals</a><a href="#">Signature</a>
+      </div>
+
+      <div>
+        <h5>TRENDING</h5>
+        <a href="#">ACOSTA Collection</a><a href="#">Anime Collection</a><a href="#">Oversized T-shirt</a><a href="#">Oversized Shirt</a><a href="#">Bottoms for Women</a><a href="#">Bottoms for Men</a><a href="#">Sweatshirts &amp; Hoodies</a><a href="#">Jacket</a>
+      </div>
+
+      <div>
+        <h5>INFO</h5>
+        <a href="#">Terms &amp; Conditions</a><a href="#">Stores Near Me</a><a href="#">Blogs</a><a href="#">FAQs</a><a href="#">Contact</a><a href="#">Privacy Policy</a><a href="#">Returns and Exchange Policy</a><a href="#">Offers and Deals</a>
+      </div>
+
+      <div>
+        <h5>EXPLORE</h5>
+        <a href="#">Search</a><a href="#">Return</a><a href="#">About Us</a><a href="#">HTML Sitemap</a>
+      </div>
+
+      <div class="newsletter">
+        <h5>WE'VE GOT YOU COVERED:</h5>
+        <p>Beyond the Outfit: Be the first to know about new arrivals, sales &amp; exclusive drops.</p>
+        <form onsubmit="return false">
+          <input type="email" placeholder="Email">
+          <button>→</button>
+        </form>
+        <h5 class="app-title">EXPERIENCE THE BONKERS CORNER APP</h5>
+        <div class="app-badges">
+          <span>Google Play</span><span>App Store</span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">© 2026 BonkersCorner — UI clone built for a student assignment. Not affiliated with Bonkers Corner.</div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="#" class="whatsapp" title="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/></svg>
+  </a>
+
+</body>
+</html>
